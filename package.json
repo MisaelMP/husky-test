@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "prettier --check .",
     "prepare": "husky install",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "pre-commit": "prettier --write . && git add ."
   },
   "dependencies": {
     "next": "12.3.0",
