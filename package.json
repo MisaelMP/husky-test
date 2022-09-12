@@ -9,7 +9,13 @@
     "lint": "prettier --check .",
     "prepare": "husky install",
     "format": "prettier --write .",
-    "pre-commit": "prettier --write . && git add ."
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js, ts, jsx}": [
+      "prettier --write .",
+      "git add ."
+    ]
   },
   "dependencies": {
     "next": "12.3.0",
@@ -20,6 +26,7 @@
     "eslint": "8.23.0",
     "eslint-config-next": "12.3.0",
     "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1"
   },
   "husky": {
