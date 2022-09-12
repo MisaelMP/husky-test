@@ -6,8 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "prepare": "husky install"
+    "lint": "prettier --check .",
+    "prepare": "husky install",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "next": "12.3.0",
@@ -17,7 +18,8 @@
   "devDependencies": {
     "eslint": "8.23.0",
     "eslint-config-next": "12.3.0",
-    "husky": "^8.0.1"
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1"
   },
   "husky": {
     "hooks": {

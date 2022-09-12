@@ -1,3 +1,9 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "indent": ["error", 2],
+    "jsx-quotes": [2, "prefer-single"],
+    "quotes": ["error", "single"],
+    "no-console": [0]
+  }
 }
